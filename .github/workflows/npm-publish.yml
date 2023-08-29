@@ -11,6 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: install nodejs 
+        uses: ctions/setup-node@v3.8.1
+        with: 
+          node-version: latest
       - name: install dependencies
         run: npm install
       - name: test
