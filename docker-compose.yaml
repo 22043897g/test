@@ -1,0 +1,7 @@
+version: '3'
+services:
+  treasureNet_recorder:
+    image: treasurenet/recorder:1.1
+    network_mode: "host"
+    restart: unless-stopped
+    container_name: recorder
